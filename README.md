@@ -1,70 +1,48 @@
-# Mohammed Safwan — Portfolio
+Mohammed Safwan — Portfolio
 
-Next.js 14 (App Router) + Tailwind CSS + Framer Motion + shadcn/ui-style
-components. Single-page, light/dark toggle, corporate navy & steel-blue
-theme.
+Personal portfolio site for Mohammed Safwan, a Full Stack Developer with 3+ years of experience in Java, Spring Boot, React.js, and MySQL.
 
-## Run it locally (Windows)
+Live site: https://mohammed-safwan-portfolio.vercel.app
 
-1. Install [Node.js LTS](https://nodejs.org) if you don't have it.
-2. Open PowerShell/CMD in this folder and install dependencies:
-   ```
-   npm install
-   ```
-3. Start the dev server:
-   ```
-   npm run dev
-   ```
-4. Open http://localhost:3000
+Tech Stack
+Framework: Next.js 14 (App Router)
+Styling: Tailwind CSS
+Animation: Framer Motion
+Icons: Lucide React
+UI primitives: shadcn/ui-style components (hand-built, no CLI dependency)
+Deployment: Vercel
+Sections
+Section	What it covers
+Hero	Name, role, photo, résumé download, availability badge
+Availability	Quick-glance status: open to work, flexibility, location
+About	Professional summary
+Experience	Work history
+Skills	Technical skills grouped by category
+Projects	Nova (banking dashboard), Nexnid-ERP, OrderHub — with live/GitHub links
+Education	Academic timeline
+Contact	Direct links — email, LinkedIn, GitHub, phone
+Design
 
-## Swap in your own photo later
+Dark-first, "futuristic tech" aesthetic — animated ambient gradient background, glassmorphic cards with glow-on-hover, and a cyan → violet gradient accent used across headings, buttons, and interactive elements.
 
-Right now the hero uses an "MS" initials mark instead of a photo. To add
-one:
-1. Drop your photo into `public/`, e.g. `public/profile.jpg`.
-2. In `components/hero.tsx`, replace the `<span className="font-display ...">MS</span>`
-   block with a Next.js `<Image src="/profile.jpg" alt="Mohammed Safwan" fill className="object-cover" />`
-   (import `Image` from `next/image` at the top of the file).
+Getting Started
+bash
+npm install
+npm run dev
 
-## Deploy to Vercel
+Open http://localhost:3000 to view it.
 
-**Option A — GitHub + Vercel dashboard (recommended)**
-1. Create a new empty repo on GitHub.
-2. In this project folder:
-   ```
-   git init
-   git add .
-   git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<repo-name>.git
-   git push -u origin main
-   ```
-3. Go to https://vercel.com → **Add New Project** → import that GitHub repo.
-4. Vercel auto-detects Next.js — leave all settings as default and click **Deploy**.
-5. You'll get a live `*.vercel.app` URL in about 2 minutes. Every push to `main` auto-redeploys.
-
-**Option B — Vercel CLI (no GitHub needed)**
-```
-npm install -g vercel
-vercel login
-vercel
-```
-Follow the prompts (accept defaults) — this deploys a preview URL.
-Run `vercel --prod` to push it live.
-
-## Project structure
-
-```
-app/            Route + global styles
-components/     Page sections (hero, about, skills, projects, education, contact)
-components/ui/  Reusable shadcn-style primitives (Button)
+Project Structure
+app/            Routes, global styles, SEO (metadata, robots.ts, sitemap.ts)
+components/     Page sections (hero, about, experience, skills, projects, education, contact)
+components/ui/  Reusable primitives (Button)
 lib/            cn() class-merging helper
-public/         Résumé PDF served at /Mohammed_Safwan_Resume.pdf
-```
+public/         Résumé PDF, profile photo
+Deployment
 
-## Content sourced from your résumé
+Deployed on Vercel, connected to this repo's main branch — every push auto-redeploys. No build configuration overrides needed; Vercel auto-detects Next.js.
 
-Name, contact links, skills, projects (Nexnid-ERP, OrderHub), and
-education were pulled directly from `Safwan_Resume_ATS.pdf`. Update the
-data arrays at the top of `components/projects.tsx`, `components/skills.tsx`,
-and `components/education.tsx` any time your details change.
+Contact
+Email: safwanshaikh053@gmail.com
+LinkedIn: safwan-shaikh-715007250
+GitHub: @safwanshaikh053

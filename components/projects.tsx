@@ -6,6 +6,94 @@ import { Reveal, SectionHeading } from "@/components/reveal";
 
 const PROJECTS = [
   {
+    name: "OrderHub",
+    tagline: "Canteen Management System",
+    period: null as string | null,
+    description:
+      "Full-stack web app automating college canteen operations — digital food ordering, menu management, and order tracking, deployed via Docker with a cloud MySQL backend.",
+    points: [
+      "Digital ordering, menu management, and order tracking",
+      "JWT-based user authentication",
+      "REST APIs connecting frontend and backend",
+      "Deployed via Docker on Render with an Aiven MySQL database",
+    ],
+    tags: ["Spring Boot", "MySQL", "Docker", "JWT", "Bootstrap"],
+    github:
+      "https://github.com/safwanshaikh053/OrderHub-Canteen-Management-System",
+    live: "https://orderhub-zjsu.onrender.com",
+  },
+  {
+    name: "Nexnid-ERP",
+    tagline: "Enterprise Resource Planning System",
+    period: null as string | null,
+    description:
+      "Full-stack ERP application for managing leads, projects, employees, and business workflows, with role-based authentication and access control across multiple organizational roles.",
+    points: [
+      "Responsive UI built with React.js, JavaScript, HTML5, CSS3, and Bootstrap",
+      "REST APIs integrated with Spring Boot and MySQL for data processing",
+      "Role-based auth and access control using JWT and Spring Security",
+      "Delivered through full SDLC — requirements, testing, debugging, deployment",
+    ],
+    tags: ["React.js", "Spring Boot", "MySQL", "JWT", "Spring Security"],
+    github:
+      "https://github.com/safwanshaikh053/Nexnid-ERP-Interior-Designing-Company",
+    live: null as string | null,
+  },
+  {
+    name: "AI-Powered Recruitment & Talent Management Platform",
+    tagline:
+      "Full-stack SaaS recruitment platform with AI-powered candidate-job matching and role-based dashboards",
+    period: null as string | null,
+    description:
+      "A full-stack SaaS recruitment platform connecting candidates, recruiters, and admins — covering job posting, applications, interview scheduling, and AI-driven candidate-job matching, built with strict role-based access control throughout.",
+    points: [
+      "Role-based auth (candidate/recruiter/admin) with protected routes and ownership-scoped server actions",
+      "End-to-end hiring pipeline — job posting, applications, stage tracking, and interview scheduling",
+      "AI-powered match scoring: a deterministic weighted algorithm paired with AI-generated explanations, cached to avoid repeat API calls",
+      "Resume upload with PDF text extraction feeding directly into candidate-job matching",
+      "Admin panel with platform analytics, user/company moderation, and full audit logging",
+    ],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Auth.js",
+      "Tailwind CSS",
+      "Recharts",
+      "Gemini AI",
+    ],
+    github: "https://github.com/safwanshaikh053/AI-Powered-recruitment-platform",
+    live: "https://recruitment-platform-seven.vercel.app/",
+  },
+  {
+    name: "DentalPro Suite",
+    tagline: "Dental Clinic Management Platform",
+    period: null as string | null,
+    description:
+      "DentalPro Suite is a full-stack dental clinic management platform designed to streamline day-to-day clinical operations through a centralized digital system. It provides dedicated workflows for managing patients, appointments, check-ins, procedures, and the clinic queue, with a modern dashboard giving clinic staff clear visibility into daily operations.",
+    points: [
+      "Patient management, appointment scheduling, and check-in workflow",
+      "Real-time queue management and procedure management",
+      "Dentist/doctor management with role-based workflows",
+      "API-driven architecture integrating frontend workflows with backend services",
+      "Responsive, modern UI with production-ready deployment",
+    ],
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "REST APIs",
+      "Tailwind CSS",
+      "Node.js",
+      "PostgreSQL",
+      "Authentication",
+    ],
+    github: "https://github.com/safwanshaikh053/dentalpro-suite",
+    live: "https://dentalpro-suite-two.vercel.app/",
+  },
+  {
     name: "Nova — Banking Dashboard",
     tagline: "Full-stack fintech dashboard with atomic transfers",
     period: null as string | null,
@@ -29,40 +117,6 @@ const PROJECTS = [
     ],
     github: "https://github.com/safwanshaikh053/Nova-Bank",
     live: "https://nova-bank-coral.vercel.app",
-  },
-  {
-    name: "Nexnid-ERP",
-    tagline: "Enterprise Resource Planning System",
-    period: "Mar 2026 – Jun 2026",
-    description:
-      "Full-stack ERP application for managing leads, projects, employees, and business workflows, with role-based authentication and access control across multiple organizational roles.",
-    points: [
-      "Responsive UI built with React.js, JavaScript, HTML5, CSS3, and Bootstrap",
-      "REST APIs integrated with Spring Boot and MySQL for data processing",
-      "Role-based auth and access control using JWT and Spring Security",
-      "Delivered through full SDLC — requirements, testing, debugging, deployment",
-    ],
-    tags: ["React.js", "Spring Boot", "MySQL", "JWT", "Spring Security"],
-    github:
-      "https://github.com/safwanshaikh053/Nexnid-ERP-Interior-Designing-Company",
-    live: null as string | null,
-  },
-  {
-    name: "OrderHub",
-    tagline: "Canteen Management System",
-    period: "Dec 2025 – Feb 2026",
-    description:
-      "Full-stack web app automating college canteen operations — digital food ordering, menu management, and order tracking, deployed via Docker with a cloud MySQL backend.",
-    points: [
-      "Digital ordering, menu management, and order tracking",
-      "JWT-based user authentication",
-      "REST APIs connecting frontend and backend",
-      "Deployed via Docker on Render with an Aiven MySQL database",
-    ],
-    tags: ["Spring Boot", "MySQL", "Docker", "JWT", "Bootstrap"],
-    github:
-      "https://github.com/safwanshaikh053/OrderHub-Canteen-Management-System",
-    live: "https://orderhub-zjsu.onrender.com",
   },
 ];
 

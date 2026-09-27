@@ -3,7 +3,7 @@ import { Reveal, SectionHeading } from "@/components/reveal";
 const GROUPS = [
   {
     label: "Languages & Core",
-    items: ["Java", "JavaScript (ES6+)", "HTML5", "CSS3", "OOP"],
+    items: ["Java", "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "OOP"],
   },
   {
     label: "Frontend",
@@ -11,7 +11,10 @@ const GROUPS = [
       "React.js",
       "React Hooks",
       "Redux (Basic)",
+      "Next.js",
+      "Tailwind CSS",
       "Bootstrap",
+      "Framer Motion",
       "Responsive Web Design",
     ],
   },
@@ -19,15 +22,26 @@ const GROUPS = [
     label: "Backend",
     items: [
       "Spring Boot",
+      "Node.js",
       "Spring Security",
       "JWT",
+      "Auth.js",
+      "NextAuth",
       "Hibernate",
       "REST API Development",
     ],
   },
   {
-    label: "Database & Tools",
-    items: ["MySQL", "Axios", "Maven", "Git", "GitHub", "Docker"],
+    label: "Database & ORM",
+    items: ["MySQL", "PostgreSQL", "Prisma", "Axios"],
+  },
+  {
+    label: "AI & Data Visualization",
+    items: ["Gemini AI", "Recharts"],
+  },
+  {
+    label: "Tools & Deployment",
+    items: ["Git", "GitHub", "Docker", "Maven", "Vercel"],
   },
   {
     label: "Practices",
